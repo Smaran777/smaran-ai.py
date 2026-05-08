@@ -75,3 +75,9 @@ if user_input:
     st.session_state.messages.append(
         {"role": "assistant", "content": full_response}
     )
+
+from openai import OpenAI
+
+client = OpenAI(
+    api_key="sk-xxxxxxxxxxxxxxxx"
+)
